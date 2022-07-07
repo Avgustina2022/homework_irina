@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Заголовок таблицы</title>
+  </head>
+  <body>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+
+        flex-wrap: wrap;
+        align-items: stretch;
+      }
+      .red {
+        background: orangered;
+        order: -2;
+      }
+      .green {
+        background: yellowgreen;
+      }
+      .blue {
+        background: steelblue;
+        order: -1;
+
+        align-items: stretch;
+        align-items: flex-start;
+      }
+      .fuchsia {
+        background: fuchsia;
+        order: -1;
+      }
+      .grey {
+        background: grey;
+        order: -1;
+      }
+
+      .white {
+        background: white;
+      }
+
+      .container > div {
+        font-size: 5vw;
+        padding: 0.5em;
+        color: white;
+      }
+    </style>
+    <div class="container">
+      <div class="red">Первый</div>
+      <div class="green">Второй</div>
+      <div class="blue">Третий</div>
+      <div class="fuchsia">Четвертый</div>
+      <div class="grey">Пятый</div>
+      <div class="white">Шестой</div>
+    </div>
+  </body>
+</html>
