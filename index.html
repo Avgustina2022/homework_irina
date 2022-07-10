@@ -3,37 +3,55 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Заголовок таблицы</title>
-    <link rel="stylesheet" href="css/animate.min.css" />
   </head>
   <body>
-    <table width="100%" border="1" cellpadding="4" cellspacing="0">
-      <caption>
-        Как менялись наши фавориты на скачках
-      </caption>
-      <tr>
-        <th>&nbsp;</th>
-        <th>2020</th>
-        <th>2021</th>
-        <th>2022</th>
-      </tr>
-      <tr>
-        <td>Огненный</td>
-        <td>1 место</td>
-        <td>1 место</td>
-        <td>не занял</td>
-      </tr>
-      <tr>
-        <td>Буря</td>
-        <td>2 место</td>
-        <td>не заняла</td>
-        <td>1 место</td>
-      </tr>
-      <tr>
-        <td>Любимчик</td>
-        <td>не занял</td>
-        <td>2 место</td>
-        <td>1 место</td>
-      </tr>
-    </table>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+
+        flex-wrap: wrap;
+        align-items: stretch;
+      }
+      .red {
+        background: orangered;
+        order: -2;
+      }
+      .green {
+        background: yellowgreen;
+      }
+      .blue {
+        background: steelblue;
+        order: -1;
+
+        align-items: stretch;
+      }
+      .fuchsia {
+        background: fuchsia;
+        order: -1;
+      }
+      .grey {
+        background: grey;
+        order: -1;
+      }
+
+      .white {
+        background: white;
+      }
+
+      .container > div {
+        font-size: 5vw;
+        padding: 0.5em;
+        color: white;
+      }
+    </style>
+    <div class="container">
+      <div class="red">Первый</div>
+      <div class="green">Второй</div>
+      <div class="blue">Третий</div>
+      <div class="fuchsia">Четвертый</div>
+      <div class="grey">Пятый</div>
+      <div class="white">Шестой</div>
+    </div>
   </body>
 </html>
