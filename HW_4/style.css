@@ -1,0 +1,14 @@
+body {
+  padding: 20px;
+  font: 18px/1.5 sans-serif;
+}
+.img {
+  width: 5%;
+}
+.input {
+  text-align: right;
+}
+
+label {
+  float: left;
+}
