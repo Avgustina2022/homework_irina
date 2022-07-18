@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Whitesquare</title>
+    <link rel="stylesheet" href="" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="http://fonts.googleapis.com/css?family=Oswald:400,300"
+      type="text/css"
+    />
+    <style>
+      @keyframes translating {
+        0% {
+          transform: translate(0, 0);
+        }
+        25% {
+          transform: translate(240px, 0);
+        }
+        50% {
+          transform: translate(240px, 140px);
+        }
+        75% {
+          transform: translate(0, 140px);
+        }
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+      p {
+        animation: translating 4s linear infinite;
+      }
+      @keyframes rotating {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+h2 { animation: rotating 15s linear infinite; }
+
+@keyframes skewing {
+  0%   { transform: skew(0deg); }
+  20%  { transform: skew(10deg); }
+  40%  { transform: skew(45deg); }
+  60%  { transform: skew(90deg); }
+  80%  { transform: skew(120deg); }
+  100% { transform: skew(0deg); }
+}
+h1 { animation: skewing 10s steps(1) 0s infinite; }
+img{
+    width:15%;
+}
+@keyframes scaling {
+  0%   { transform: scale(1); }
+  20%  { transform: scale(2); }
+  40%  { transform: scale(0.5); }
+  60%  { transform: scale(0); }
+  80%  { transform: scale(-1); }
+  100% { transform: scale(1); }
+}
+a { animation: scaling 10s steps(1) 3s infinite; }
+    </style>
+    <body>
+
+        <article>
+            <h1><img src="/fly.jpe" alt=""></h1>
+            <p>Маленькие мушки</p>
+            <h1>Заголовок2</h1>
+            <p>Маленькие мушки</p>
+            <h2><em>Большая жирная муха</em></h2>
+            <a>Первая ссылка</a><br />
+            <a class="link"><a href="www.yandex.ru">Яндекс</a><br />
+            <a>Третья ссылка</a>
+            
+    </body>
+  </head>
+</html>
