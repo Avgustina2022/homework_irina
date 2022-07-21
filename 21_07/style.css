@@ -1,0 +1,40 @@
+body {
+  background-color: #ffd23f;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  body {
+    background-color: blue;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  body {
+    background-color: green;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  body {
+    background-color: violet;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  body {
+    background-color: red;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+  body {
+    background-color: grey;
+  }
+}
+
+.wrapper .sidebar {
+  background: rgb(5, 68, 104);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 225px;
+  height: 100%;
+  padding: 20px 0;
+  transition: all 0.5s ease;
+}
